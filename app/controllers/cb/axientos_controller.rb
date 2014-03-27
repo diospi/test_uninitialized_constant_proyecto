@@ -15,6 +15,7 @@ class Cb::AxientosController < ApplicationController
   # GET /cb/axientos/new
   def new
     @axiento = Cb::Axiento.new
+    @axiento.axiento_dets.build
   end
 
   # GET /cb/axientos/1/edit
