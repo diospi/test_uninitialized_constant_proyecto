@@ -1,0 +1,2 @@
+module Cb::ProyectosHelper
+end

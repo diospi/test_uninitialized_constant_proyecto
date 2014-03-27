@@ -1,0 +1,1413 @@
+  [1m[36m (203.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (158.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateCbAxientos (20140327130141)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "cb_axientos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255), "proyecto_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140327130141"]]
+  [1m[35m (187.2ms)[0m  commit transaction
+Migrating to CreateCbProyectos (20140327130253)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "cb_proyectos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140327130253"]]
+  [1m[35m (165.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/mini-profiler-resources/includes.css?v=898a13ca6797c6bc1fee313e17d388b0" for 127.0.0.1 at 2014-03-27 08:03:47 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/mini-profiler-resources/includes.css"):
+  actionpack (4.1.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.rc2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.rc2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.rc2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.rc2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.rc2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.rc2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.rc2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.rc2) lib/rails/engine.rb:515:in `call'
+  railties (4.1.0.rc2) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/friedheim/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/friedheim/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/friedheim/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (112.4ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (383.3ms)
+
+
+Started GET "/mini-profiler-resources/jquery.tmpl.js?v=898a13ca6797c6bc1fee313e17d388b0" for 127.0.0.1 at 2014-03-27 08:03:48 -0500
+
+ActionController::RoutingError (No route matches [GET] "/mini-profiler-resources/jquery.tmpl.js"):
+  actionpack (4.1.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.rc2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.rc2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.rc2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.rc2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.rc2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.rc2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.rc2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.rc2) lib/rails/engine.rb:515:in `call'
+  railties (4.1.0.rc2) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/friedheim/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/friedheim/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/friedheim/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.9ms)
+
+
+Started GET "/mini-profiler-resources/includes.css?v=55905d0d15f4dc1e14b29260abce19b2" for 127.0.0.1 at 2014-03-27 08:03:56 -0500
+
+ActionController::RoutingError (No route matches [GET] "/mini-profiler-resources/includes.css"):
+  actionpack (4.1.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.rc2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.rc2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.rc2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.rc2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.rc2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.rc2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.rc2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.rc2) lib/rails/engine.rb:515:in `call'
+  railties (4.1.0.rc2) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/friedheim/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/friedheim/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/friedheim/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.2ms)
+
+
+Started GET "/mini-profiler-resources/jquery.tmpl.js?v=55905d0d15f4dc1e14b29260abce19b2" for 127.0.0.1 at 2014-03-27 08:03:56 -0500
+
+ActionController::RoutingError (No route matches [GET] "/mini-profiler-resources/jquery.tmpl.js"):
+  actionpack (4.1.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.rc2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.rc2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.rc2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.rc2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.rc2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.rc2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.rc2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.rc2) lib/rails/engine.rb:515:in `call'
+  railties (4.1.0.rc2) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/friedheim/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/friedheim/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/friedheim/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (16.1ms)
+
+
+Started GET "/mini-profiler-resources/includes.css?v=55905d0d15f4dc1e14b29260abce19b2" for 127.0.0.1 at 2014-03-27 08:03:58 -0500
+
+ActionController::RoutingError (No route matches [GET] "/mini-profiler-resources/includes.css"):
+  actionpack (4.1.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.rc2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.rc2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.rc2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.rc2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.rc2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.rc2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.rc2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.rc2) lib/rails/engine.rb:515:in `call'
+  railties (4.1.0.rc2) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/friedheim/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/friedheim/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/friedheim/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.4ms)
+
+
+Started GET "/mini-profiler-resources/jquery.tmpl.js?v=55905d0d15f4dc1e14b29260abce19b2" for 127.0.0.1 at 2014-03-27 08:03:58 -0500
+
+ActionController::RoutingError (No route matches [GET] "/mini-profiler-resources/jquery.tmpl.js"):
+  actionpack (4.1.0.rc2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0.rc2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0.rc2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0.rc2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0.rc2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0.rc2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0.rc2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0.rc2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0.rc2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0.rc2) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0.rc2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0.rc2) lib/rails/engine.rb:515:in `call'
+  railties (4.1.0.rc2) lib/rails/application.rb:142:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/friedheim/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/friedheim/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/friedheim/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (15.9ms)
+
+
+Started GET "/cb/axientos/" for 127.0.0.1 at 2014-03-27 08:04:15 -0500
+Processing by Cb::AxientosController#index as HTML
+  [1m[35mCb::Axiento Load (0.2ms)[0m  SELECT "cb_axientos".* FROM "cb_axientos"
+  Rendered cb/axientos/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1297ms (Views: 1263.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/cb/axientos.css?body=1" for 127.0.0.1 at 2014-03-27 08:04:17 -0500
+
+
+Started GET "/assets/cb/proyectos.css?body=1" for 127.0.0.1 at 2014-03-27 08:04:17 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-27 08:04:17 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-27 08:04:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:17 -0500
+
+
+Started GET "/assets/cb/axientos.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:17 -0500
+
+
+Started GET "/assets/cb/proyectos.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:17 -0500
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 08:04:20 -0500
+Processing by Cb::AxientosController#new as HTML
+  Rendered cb/axientos/_form.html.erb (78.0ms)
+  Rendered cb/axientos/new.html.erb within layouts/application (79.4ms)
+Completed 200 OK in 86ms (Views: 83.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/cb/axientos" for 127.0.0.1 at 2014-03-27 08:04:33 -0500
+Processing by Cb::AxientosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F5RNkx4ZIpTy6ZsYu8me8zBNRxkn0RAH2skrA74/ieg=", "cb_axiento"=>{"nombre"=>"Friedheim", "proyecto_id"=>"12"}, "commit"=>"Create Axiento"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cb_axientos" ("created_at", "nombre", "proyecto_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-03-27 13:04:33.960077"], ["nombre", "Friedheim"], ["proyecto_id", 12], ["updated_at", "2014-03-27 13:04:33.960077"]]
+  [1m[36m (363.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/cb/axientos/1
+Completed 302 Found in 447ms (ActiveRecord: 363.7ms)
+
+
+Started GET "/cb/axientos/1" for 127.0.0.1 at 2014-03-27 08:04:34 -0500
+Processing by Cb::AxientosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCb::Axiento Load (0.2ms)[0m  SELECT  "cb_axientos".* FROM "cb_axientos"  WHERE "cb_axientos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered cb/axientos/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-27 08:04:34 -0500
+
+
+Started GET "/assets/cb/axientos.css?body=1" for 127.0.0.1 at 2014-03-27 08:04:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:34 -0500
+
+
+Started GET "/assets/cb/proyectos.css?body=1" for 127.0.0.1 at 2014-03-27 08:04:34 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-27 08:04:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:34 -0500
+
+
+Started GET "/assets/cb/axientos.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:34 -0500
+
+
+Started GET "/assets/cb/proyectos.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:34 -0500
+
+
+Started GET "/cb/proyectos/" for 127.0.0.1 at 2014-03-27 08:04:40 -0500
+Processing by Cb::ProyectosController#index as HTML
+  [1m[36mCb::Proyecto Load (0.2ms)[0m  [1mSELECT "cb_proyectos".* FROM "cb_proyectos"[0m
+  Rendered cb/proyectos/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/cb/axientos.css?body=1" for 127.0.0.1 at 2014-03-27 08:04:40 -0500
+
+
+Started GET "/assets/cb/proyectos.css?body=1" for 127.0.0.1 at 2014-03-27 08:04:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:40 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-27 08:04:40 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-27 08:04:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:40 -0500
+
+
+Started GET "/assets/cb/axientos.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:40 -0500
+
+
+Started GET "/assets/cb/proyectos.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:40 -0500
+
+
+Started GET "/cb/proyectos/new" for 127.0.0.1 at 2014-03-27 08:04:42 -0500
+Processing by Cb::ProyectosController#new as HTML
+  Rendered cb/proyectos/_form.html.erb (5.6ms)
+  Rendered cb/proyectos/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/cb/proyectos" for 127.0.0.1 at 2014-03-27 08:04:45 -0500
+Processing by Cb::ProyectosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F5RNkx4ZIpTy6ZsYu8me8zBNRxkn0RAH2skrA74/ieg=", "cb_proyecto"=>{"name"=>"test"}, "commit"=>"Create Proyecto"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "cb_proyectos" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-03-27 13:04:45.606677"], ["name", "test"], ["updated_at", "2014-03-27 13:04:45.606677"]]
+  [1m[35m (309.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/cb/proyectos/1
+Completed 302 Found in 312ms (ActiveRecord: 309.3ms)
+
+
+Started GET "/cb/proyectos/1" for 127.0.0.1 at 2014-03-27 08:04:46 -0500
+Processing by Cb::ProyectosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCb::Proyecto Load (0.3ms)[0m  [1mSELECT  "cb_proyectos".* FROM "cb_proyectos"  WHERE "cb_proyectos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cb/proyectos/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-27 08:04:46 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:46 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:46 -0500
+
+
+Started GET "/assets/cb/axientos.css?body=1" for 127.0.0.1 at 2014-03-27 08:04:46 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-27 08:04:46 -0500
+
+
+Started GET "/assets/cb/proyectos.css?body=1" for 127.0.0.1 at 2014-03-27 08:04:46 -0500
+
+
+Started GET "/assets/cb/axientos.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:46 -0500
+
+
+Started GET "/assets/cb/proyectos.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:46 -0500
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 08:04:51 -0500
+Processing by Cb::AxientosController#new as HTML
+  Rendered cb/axientos/_form.html.erb (2.5ms)
+  Rendered cb/axientos/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-27 08:04:51 -0500
+
+
+Started GET "/assets/cb/axientos.css?body=1" for 127.0.0.1 at 2014-03-27 08:04:51 -0500
+
+
+Started GET "/assets/cb/proyectos.css?body=1" for 127.0.0.1 at 2014-03-27 08:04:51 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:51 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-27 08:04:51 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:51 -0500
+
+
+Started GET "/assets/cb/axientos.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:51 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:51 -0500
+
+
+Started GET "/assets/cb/proyectos.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:51 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-27 08:04:51 -0500
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 08:06:03 -0500
+Processing by Cb::AxientosController#new as HTML
+Completed 500 Internal Server Error in 1ms
+
+SyntaxError (/home/friedheim/projects/test_uninitialized_constant_proyecto/app/models/cb/axiento.rb:7: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/cb/axientos_controller.rb:17:in `new'
+
+
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.1ms)
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 08:06:13 -0500
+Processing by Cb::AxientosController#new as HTML
+  Rendered cb/axientos/_form.html.erb (6.4ms)
+  Rendered cb/axientos/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/cb/axientos.css?body=1" for 127.0.0.1 at 2014-03-27 08:06:13 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:13 -0500
+
+
+Started GET "/assets/cb/proyectos.css?body=1" for 127.0.0.1 at 2014-03-27 08:06:13 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-27 08:06:13 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-27 08:06:13 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:13 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:13 -0500
+
+
+Started GET "/assets/cb/axientos.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:13 -0500
+
+
+Started GET "/assets/cb/proyectos.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:13 -0500
+
+
+Started POST "/cb/axientos" for 127.0.0.1 at 2014-03-27 08:06:16 -0500
+Processing by Cb::AxientosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F5RNkx4ZIpTy6ZsYu8me8zBNRxkn0RAH2skrA74/ieg=", "cb_axiento"=>{"nombre"=>"4123", "proyecto"=>""}, "commit"=>"Create Axiento"}
+Unpermitted parameters: proyecto
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "cb_axientos" ("created_at", "nombre", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-03-27 13:06:16.220590"], ["nombre", "4123"], ["updated_at", "2014-03-27 13:06:16.220590"]]
+  [1m[35m (296.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/cb/axientos/2
+Completed 302 Found in 300ms (ActiveRecord: 297.2ms)
+
+
+Started GET "/cb/axientos/2" for 127.0.0.1 at 2014-03-27 08:06:16 -0500
+Processing by Cb::AxientosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCb::Axiento Load (0.2ms)[0m  [1mSELECT  "cb_axientos".* FROM "cb_axientos"  WHERE "cb_axientos"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered cb/axientos/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/cb/proyectos.css?body=1" for 127.0.0.1 at 2014-03-27 08:06:16 -0500
+
+
+Started GET "/assets/cb/axientos.css?body=1" for 127.0.0.1 at 2014-03-27 08:06:16 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-27 08:06:16 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:16 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-27 08:06:16 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:16 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:16 -0500
+
+
+Started GET "/assets/cb/axientos.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:16 -0500
+
+
+Started GET "/assets/cb/proyectos.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:16 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:16 -0500
+
+
+Started GET "/cb/axientos/2/edit" for 127.0.0.1 at 2014-03-27 08:06:21 -0500
+Processing by Cb::AxientosController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCb::Axiento Load (0.1ms)[0m  SELECT  "cb_axientos".* FROM "cb_axientos"  WHERE "cb_axientos"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered cb/axientos/_form.html.erb (2.7ms)
+  Rendered cb/axientos/edit.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/cb/axientos/2" for 127.0.0.1 at 2014-03-27 08:06:24 -0500
+Processing by Cb::AxientosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F5RNkx4ZIpTy6ZsYu8me8zBNRxkn0RAH2skrA74/ieg=", "cb_axiento"=>{"nombre"=>"4123", "proyecto"=>"512"}, "commit"=>"Update Axiento", "id"=>"2"}
+  [1m[36mCb::Axiento Load (0.1ms)[0m  [1mSELECT  "cb_axientos".* FROM "cb_axientos"  WHERE "cb_axientos"."id" = ? LIMIT 1[0m  [["id", 2]]
+Unpermitted parameters: proyecto
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/cb/axientos/2
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/cb/axientos/2" for 127.0.0.1 at 2014-03-27 08:06:24 -0500
+Processing by Cb::AxientosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mCb::Axiento Load (0.1ms)[0m  SELECT  "cb_axientos".* FROM "cb_axientos"  WHERE "cb_axientos"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered cb/axientos/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/cb/proyectos.css?body=1" for 127.0.0.1 at 2014-03-27 08:06:24 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:24 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-27 08:06:24 -0500
+
+
+Started GET "/assets/cb/axientos.css?body=1" for 127.0.0.1 at 2014-03-27 08:06:24 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-27 08:06:24 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:24 -0500
+
+
+Started GET "/assets/cb/axientos.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:24 -0500
+
+
+Started GET "/assets/cb/proyectos.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:24 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:24 -0500
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 08:06:42 -0500
+Processing by Cb::AxientosController#new as HTML
+  Rendered cb/axientos/_form.html.erb (6.9ms)
+  Rendered cb/axientos/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 36ms (Views: 11.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/cb/axientos.css?body=1" for 127.0.0.1 at 2014-03-27 08:06:42 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-27 08:06:42 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:42 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:42 -0500
+
+
+Started GET "/assets/cb/proyectos.css?body=1" for 127.0.0.1 at 2014-03-27 08:06:42 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-27 08:06:42 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:42 -0500
+
+
+Started GET "/assets/cb/axientos.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:42 -0500
+
+
+Started GET "/assets/cb/proyectos.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:42 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:42 -0500
+
+
+Started POST "/cb/axientos" for 127.0.0.1 at 2014-03-27 08:06:44 -0500
+Processing by Cb::AxientosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F5RNkx4ZIpTy6ZsYu8me8zBNRxkn0RAH2skrA74/ieg=", "cb_axiento"=>{"nombre"=>"fasef", "proyecto"=>""}, "commit"=>"Create Axiento"}
+Unpermitted parameters: proyecto
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "cb_axientos" ("created_at", "nombre", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-03-27 13:06:44.433354"], ["nombre", "fasef"], ["updated_at", "2014-03-27 13:06:44.433354"]]
+  [1m[36m (298.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/cb/axientos/3
+Completed 302 Found in 303ms (ActiveRecord: 298.6ms)
+
+
+Started GET "/cb/axientos/3" for 127.0.0.1 at 2014-03-27 08:06:44 -0500
+Processing by Cb::AxientosController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCb::Axiento Load (0.2ms)[0m  SELECT  "cb_axientos".* FROM "cb_axientos"  WHERE "cb_axientos"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered cb/axientos/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-27 08:06:44 -0500
+
+
+Started GET "/assets/cb/proyectos.css?body=1" for 127.0.0.1 at 2014-03-27 08:06:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:44 -0500
+
+
+Started GET "/assets/cb/axientos.css?body=1" for 127.0.0.1 at 2014-03-27 08:06:44 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-27 08:06:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:44 -0500
+
+
+Started GET "/assets/cb/axientos.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:44 -0500
+
+
+Started GET "/assets/cb/proyectos.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-27 08:06:44 -0500
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 08:08:22 -0500
+Processing by Cb::AxientosController#new as HTML
+  Rendered cb/axientos/_form.html.erb (6.1ms)
+  Rendered cb/axientos/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/cb/axientos.css?body=1" for 127.0.0.1 at 2014-03-27 08:08:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-27 08:08:23 -0500
+
+
+Started GET "/assets/cb/proyectos.css?body=1" for 127.0.0.1 at 2014-03-27 08:08:23 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-27 08:08:23 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-27 08:08:23 -0500
+
+
+Started GET "/assets/cb/proyectos.js?body=1" for 127.0.0.1 at 2014-03-27 08:08:23 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-27 08:08:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-27 08:08:23 -0500
+
+
+Started GET "/assets/cb/axientos.js?body=1" for 127.0.0.1 at 2014-03-27 08:08:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-27 08:08:23 -0500
+
+
+Started POST "/cb/axientos" for 127.0.0.1 at 2014-03-27 08:08:26 -0500
+Processing by Cb::AxientosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F5RNkx4ZIpTy6ZsYu8me8zBNRxkn0RAH2skrA74/ieg=", "cb_axiento"=>{"nombre"=>"dasf", "proyecto"=>""}, "commit"=>"Create Axiento"}
+ hallo in proyecto=
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "cb_axientos" ("created_at", "nombre", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-03-27 13:08:26.257490"], ["nombre", "dasf"], ["updated_at", "2014-03-27 13:08:26.257490"]]
+  [1m[36m (288.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/cb/axientos/4
+Completed 302 Found in 293ms (ActiveRecord: 289.0ms)
+
+
+Started GET "/cb/axientos/4" for 127.0.0.1 at 2014-03-27 08:08:26 -0500
+Processing by Cb::AxientosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mCb::Axiento Load (0.3ms)[0m  SELECT  "cb_axientos".* FROM "cb_axientos"  WHERE "cb_axientos"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered cb/axientos/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-27 08:08:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-27 08:08:26 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-27 08:08:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-27 08:08:26 -0500
+
+
+Started GET "/assets/cb/axientos.css?body=1" for 127.0.0.1 at 2014-03-27 08:08:26 -0500
+
+
+Started GET "/assets/cb/proyectos.css?body=1" for 127.0.0.1 at 2014-03-27 08:08:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-27 08:08:26 -0500
+
+
+Started GET "/assets/cb/axientos.js?body=1" for 127.0.0.1 at 2014-03-27 08:08:26 -0500
+
+
+Started GET "/assets/cb/proyectos.js?body=1" for 127.0.0.1 at 2014-03-27 08:08:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-27 08:08:26 -0500
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 08:08:57 -0500
+Processing by Cb::AxientosController#new as HTML
+  Rendered cb/axientos/_form.html.erb (2.0ms)
+  Rendered cb/axientos/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cb/axientos.css?body=1" for 127.0.0.1 at 2014-03-27 08:08:57 -0500
+
+
+Started GET "/assets/cb/proyectos.css?body=1" for 127.0.0.1 at 2014-03-27 08:08:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-27 08:08:57 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-27 08:08:57 -0500
+
+
+Started GET "/assets/cb/axientos.js?body=1" for 127.0.0.1 at 2014-03-27 08:08:57 -0500
+
+
+Started GET "/assets/cb/proyectos.js?body=1" for 127.0.0.1 at 2014-03-27 08:08:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-27 08:08:57 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-27 08:08:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-27 08:08:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-27 08:08:57 -0500
+
+
+Started POST "/cb/axientos" for 127.0.0.1 at 2014-03-27 08:09:01 -0500
+Processing by Cb::AxientosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F5RNkx4ZIpTy6ZsYu8me8zBNRxkn0RAH2skrA74/ieg=", "cb_axiento"=>{"nombre"=>"fasef", "proyecto"=>"1"}, "commit"=>"Create Axiento"}
+ hallo in proyecto=
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "cb_axientos" ("created_at", "nombre", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-03-27 13:09:01.057212"], ["nombre", "fasef"], ["updated_at", "2014-03-27 13:09:01.057212"]]
+  [1m[36m (310.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/cb/axientos/5
+Completed 302 Found in 315ms (ActiveRecord: 310.8ms)
+
+
+Started GET "/cb/axientos/5" for 127.0.0.1 at 2014-03-27 08:09:01 -0500
+Processing by Cb::AxientosController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mCb::Axiento Load (0.1ms)[0m  SELECT  "cb_axientos".* FROM "cb_axientos"  WHERE "cb_axientos"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered cb/axientos/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/cb/proyectos.css?body=1" for 127.0.0.1 at 2014-03-27 08:09:01 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-27 08:09:01 -0500
+
+
+Started GET "/assets/cb/axientos.css?body=1" for 127.0.0.1 at 2014-03-27 08:09:01 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-27 08:09:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-27 08:09:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-27 08:09:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-27 08:09:01 -0500
+
+
+Started GET "/assets/cb/axientos.js?body=1" for 127.0.0.1 at 2014-03-27 08:09:01 -0500
+
+
+Started GET "/assets/cb/proyectos.js?body=1" for 127.0.0.1 at 2014-03-27 08:09:01 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-27 08:09:01 -0500
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 08:12:22 -0500
+Processing by Cb::AxientosController#new as HTML
+  Rendered cb/axientos/_form.html.erb (6.0ms)
+  Rendered cb/axientos/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/cb/axientos.css?body=1" for 127.0.0.1 at 2014-03-27 08:12:22 -0500
+
+
+Started GET "/assets/cb/proyectos.css?body=1" for 127.0.0.1 at 2014-03-27 08:12:22 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-27 08:12:22 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-27 08:12:22 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-27 08:12:22 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-27 08:12:22 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-27 08:12:22 -0500
+
+
+Started GET "/assets/cb/axientos.js?body=1" for 127.0.0.1 at 2014-03-27 08:12:22 -0500
+
+
+Started GET "/assets/cb/proyectos.js?body=1" for 127.0.0.1 at 2014-03-27 08:12:22 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-27 08:12:22 -0500
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 08:13:02 -0500
+Processing by Cb::AxientosController#new as HTML
+  Rendered cb/axientos/_form.html.erb (5.5ms)
+  Rendered cb/axientos/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-27 08:13:02 -0500
+
+
+Started GET "/assets/cb/axientos.css?body=1" for 127.0.0.1 at 2014-03-27 08:13:02 -0500
+
+
+Started GET "/assets/cb/proyectos.css?body=1" for 127.0.0.1 at 2014-03-27 08:13:02 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-27 08:13:02 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-27 08:13:02 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-27 08:13:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-27 08:13:02 -0500
+
+
+Started GET "/assets/cb/axientos.js?body=1" for 127.0.0.1 at 2014-03-27 08:13:02 -0500
+
+
+Started GET "/assets/cb/proyectos.js?body=1" for 127.0.0.1 at 2014-03-27 08:13:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-27 08:13:02 -0500
+
+
+Started GET "/cb/proyectos/" for 127.0.0.1 at 2014-03-27 08:13:07 -0500
+Processing by Cb::ProyectosController#index as HTML
+  [1m[36mCb::Proyecto Load (0.2ms)[0m  [1mSELECT "cb_proyectos".* FROM "cb_proyectos"[0m
+  Rendered cb/proyectos/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/cb/proyectos.css?body=1" for 127.0.0.1 at 2014-03-27 08:13:07 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-27 08:13:07 -0500
+
+
+Started GET "/assets/cb/axientos.css?body=1" for 127.0.0.1 at 2014-03-27 08:13:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-27 08:13:07 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-27 08:13:07 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-27 08:13:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-27 08:13:07 -0500
+
+
+Started GET "/assets/cb/axientos.js?body=1" for 127.0.0.1 at 2014-03-27 08:13:07 -0500
+
+
+Started GET "/assets/cb/proyectos.js?body=1" for 127.0.0.1 at 2014-03-27 08:13:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-27 08:13:07 -0500
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 08:13:15 -0500
+Processing by Cb::AxientosController#new as HTML
+  Rendered cb/axientos/_form.html.erb (2.3ms)
+  Rendered cb/axientos/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cb/axientos.css?body=1" for 127.0.0.1 at 2014-03-27 08:13:15 -0500
+
+
+Started GET "/assets/cb/proyectos.css?body=1" for 127.0.0.1 at 2014-03-27 08:13:15 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-27 08:13:15 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-27 08:13:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-27 08:13:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-27 08:13:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-27 08:13:15 -0500
+
+
+Started GET "/assets/cb/axientos.js?body=1" for 127.0.0.1 at 2014-03-27 08:13:15 -0500
+
+
+Started GET "/assets/cb/proyectos.js?body=1" for 127.0.0.1 at 2014-03-27 08:13:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-27 08:13:15 -0500
+
+
+Started POST "/cb/axientos" for 127.0.0.1 at 2014-03-27 08:13:19 -0500
+Processing by Cb::AxientosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F5RNkx4ZIpTy6ZsYu8me8zBNRxkn0RAH2skrA74/ieg=", "cb_axiento"=>{"nombre"=>"fasef", "proyecto"=>"test"}, "commit"=>"Create Axiento"}
+ hallo in proyecto=
+  [1m[35mCb::Proyecto Load (0.2ms)[0m  SELECT  "cb_proyectos".* FROM "cb_proyectos"  WHERE "cb_proyectos"."name" = 'test' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "cb_axientos" ("created_at", "nombre", "proyecto_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-03-27 13:13:19.994294"], ["nombre", "fasef"], ["proyecto_id", 1], ["updated_at", "2014-03-27 13:13:19.994294"]]
+  [1m[36m (292.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/cb/axientos/6
+Completed 302 Found in 441ms (ActiveRecord: 293.2ms)
+
+
+Started GET "/cb/axientos/6" for 127.0.0.1 at 2014-03-27 08:13:20 -0500
+Processing by Cb::AxientosController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mCb::Axiento Load (0.2ms)[0m  SELECT  "cb_axientos".* FROM "cb_axientos"  WHERE "cb_axientos"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered cb/axientos/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/cb/axientos.css?body=1" for 127.0.0.1 at 2014-03-27 08:13:20 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-27 08:13:20 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-27 08:13:20 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-27 08:13:20 -0500
+
+
+Started GET "/assets/cb/proyectos.css?body=1" for 127.0.0.1 at 2014-03-27 08:13:20 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-27 08:13:20 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-27 08:13:20 -0500
+
+
+Started GET "/assets/cb/axientos.js?body=1" for 127.0.0.1 at 2014-03-27 08:13:20 -0500
+
+
+Started GET "/assets/cb/proyectos.js?body=1" for 127.0.0.1 at 2014-03-27 08:13:20 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-27 08:13:20 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateCbAxientoDets (20140327134059)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "cb_axiento_dets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "proyecto_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140327134059"]]
+  [1m[36m (205.1ms)[0m  [1mcommit transaction[0m
+Migrating to AddImporteToCbAxientoDet (20140327142950)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "cb_axiento_dets" ADD "importe" float[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140327142950"]]
+  [1m[36m (182.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 09:31:46 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Cb::AxientosController#new as HTML
+Completed 500 Internal Server Error in 17ms
+
+NameError (uninitialized constant Cb::Axiento::Sis):
+  app/models/cb/axiento.rb:28:in `<class:Axiento>'
+  app/models/cb/axiento.rb:27:in `<top (required)>'
+  app/controllers/cb/axientos_controller.rb:17:in `new'
+
+
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.2ms)
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 09:33:29 -0500
+Processing by Cb::AxientosController#new as HTML
+Completed 500 Internal Server Error in 1ms
+
+SyntaxError (/home/friedheim/projects/test_uninitialized_constant_proyecto/app/models/cb/axiento.rb:253: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/cb/axientos_controller.rb:17:in `new'
+
+
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.1ms)
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 09:33:49 -0500
+Processing by Cb::AxientosController#new as HTML
+  Rendered cb/axientos/_form.html.erb (2.0ms)
+  Rendered cb/axientos/new.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for(@axiento) do |f| %>
+    2:     <% if @axiento.errors.any? %>
+    3:         <div id="error_explanation">
+    4:           <h2>corrige <%= pluralize(@axiento.errors.count, "notificación") %>:</h2>
+  app/views/cb/axientos/_form.html.erb:1:in `_app_views_cb_axientos__form_html_erb___4090146381864691292_30341880'
+  app/views/cb/axientos/new.html.erb:3:in `_app_views_cb_axientos_new_html_erb___4204239073850633628_30207740'
+
+
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (9.7ms)
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 09:34:29 -0500
+Processing by Cb::AxientosController#new as HTML
+  Rendered cb/axientos/_form.html.erb (51.1ms)
+  Rendered cb/axientos/new.html.erb within layouts/application (51.7ms)
+Completed 500 Internal Server Error in 57ms
+
+ActionView::Template::Error (undefined method `concepto' for #<Cb::Axiento:0x00000004f82f38>):
+    14:     <%= f.hidden_field :ingresado_en_vista, :value => 1 %>
+    15:     <div class="field">
+    16:       <%= f.label :concepto %><br />
+    17:       <%= f.text_field :concepto, :size=>70 %>
+    18:     </div>
+    19:     <div class="field">
+    20:       <%= f.label :agentenegocio %><br />
+  app/views/cb/axientos/_form.html.erb:17:in `block in _app_views_cb_axientos__form_html_erb___4090146381864691292_30341880'
+  app/views/cb/axientos/_form.html.erb:1:in `_app_views_cb_axientos__form_html_erb___4090146381864691292_30341880'
+  app/views/cb/axientos/new.html.erb:3:in `_app_views_cb_axientos_new_html_erb___4204239073850633628_30207740'
+
+
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.6ms)
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 09:34:59 -0500
+Processing by Cb::AxientosController#new as HTML
+  Rendered cb/axientos/_form.html.erb (9.5ms)
+  Rendered cb/axientos/new.html.erb within layouts/application (10.1ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (uninitialized constant Cb::Axiento::Cb::AxientoDet):
+    19:           <th><%= f.label :proyecto %></th>
+    20:           <th></th>
+    21:         </tr>
+    22:         <%= f.fields_for :axiento_dets, @axiento.axiento_dets do |builder|%>
+    23:             <%= render 'axiento_det_fields', :f => builder %>
+    24:         <% end %>
+    25:       </table>
+  app/views/cb/axientos/_form.html.erb:22:in `block in _app_views_cb_axientos__form_html_erb___4090146381864691292_30842240'
+  app/views/cb/axientos/_form.html.erb:1:in `_app_views_cb_axientos__form_html_erb___4090146381864691292_30842240'
+  app/views/cb/axientos/new.html.erb:3:in `_app_views_cb_axientos_new_html_erb___4204239073850633628_30207740'
+
+
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.6ms)
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 09:36:49 -0500
+Processing by Cb::AxientosController#new as HTML
+  Rendered cb/axientos/_form.html.erb (67.4ms)
+  Rendered cb/axientos/new.html.erb within layouts/application (68.0ms)
+Completed 500 Internal Server Error in 74ms
+
+ActionView::Template::Error (undefined method `link_to_add_fields' for #<#<Class:0x00000005c03578>:0x00000005c029c0>):
+    24:         <% end %>
+    25:       </table>
+    26: 
+    27:       <p><%= link_to_add_fields "Añadir detalle asiento", f, :axiento_dets%> </p>
+    28:     </div>
+    29: 
+    30: 
+  app/views/cb/axientos/_form.html.erb:27:in `block in _app_views_cb_axientos__form_html_erb___4090146381864691292_30842240'
+  app/views/cb/axientos/_form.html.erb:1:in `_app_views_cb_axientos__form_html_erb___4090146381864691292_30842240'
+  app/views/cb/axientos/new.html.erb:3:in `_app_views_cb_axientos_new_html_erb___4204239073850633628_30207740'
+
+
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.5ms)
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 09:37:39 -0500
+Processing by Cb::AxientosController#new as HTML
+  Rendered cb/axientos/_form.html.erb (17.2ms)
+  Rendered cb/axientos/new.html.erb within layouts/application (18.2ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `link_to_add_fields' for #<#<Class:0x00000005c03578>:0x00000004c61700>):
+    24:         <% end %>
+    25:       </table>
+    26: 
+    27:       <p><%= link_to_add_fields "Añadir detalle asiento", f, :axiento_dets%> </p>
+    28:     </div>
+    29: 
+    30: 
+  app/views/cb/axientos/_form.html.erb:27:in `block in _app_views_cb_axientos__form_html_erb___4090146381864691292_30842240'
+  app/views/cb/axientos/_form.html.erb:1:in `_app_views_cb_axientos__form_html_erb___4090146381864691292_30842240'
+  app/views/cb/axientos/new.html.erb:3:in `_app_views_cb_axientos_new_html_erb___4204239073850633628_30207740'
+
+
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.0ms)
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 09:37:41 -0500
+Processing by Cb::AxientosController#new as HTML
+  Rendered cb/axientos/_form.html.erb (45.4ms)
+  Rendered cb/axientos/new.html.erb within layouts/application (46.0ms)
+Completed 500 Internal Server Error in 48ms
+
+ActionView::Template::Error (undefined method `link_to_add_fields' for #<#<Class:0x00000005c03578>:0x00000004f38500>):
+    24:         <% end %>
+    25:       </table>
+    26: 
+    27:       <p><%= link_to_add_fields "Añadir detalle asiento", f, :axiento_dets%> </p>
+    28:     </div>
+    29: 
+    30: 
+  app/views/cb/axientos/_form.html.erb:27:in `block in _app_views_cb_axientos__form_html_erb___4090146381864691292_30842240'
+  app/views/cb/axientos/_form.html.erb:1:in `_app_views_cb_axientos__form_html_erb___4090146381864691292_30842240'
+  app/views/cb/axientos/new.html.erb:3:in `_app_views_cb_axientos_new_html_erb___4204239073850633628_30207740'
+
+
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.6ms)
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 09:38:36 -0500
+Processing by Cb::AxientosController#new as HTML
+  Rendered application/_axiento_det_fields.html.erb (4.8ms)
+  Rendered cb/axientos/_form.html.erb (27.6ms)
+  Rendered cb/axientos/new.html.erb within layouts/application (28.7ms)
+Completed 500 Internal Server Error in 127ms
+
+ActionView::Template::Error (couldn't find file 'jquery.ui.all'
+  (in /home/friedheim/projects/test_uninitialized_constant_proyecto/app/assets/javascripts/application.js:8)):
+    3: <head>
+    4:   <title>TestUninitializedConstantProyecto</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__4493890759696242120_30224040'
+
+
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.5ms)
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 09:39:17 -0500
+Processing by Cb::AxientosController#new as HTML
+  Rendered application/_axiento_det_fields.html.erb (0.5ms)
+  Rendered cb/axientos/_form.html.erb (3.8ms)
+  Rendered cb/axientos/new.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (couldn't find file 'autocomplete'
+  (in /home/friedheim/projects/test_uninitialized_constant_proyecto/app/assets/javascripts/application.js:9)):
+    3: <head>
+    4:   <title>TestUninitializedConstantProyecto</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__4493890759696242120_30224040'
+
+
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (55.6ms)
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 09:39:18 -0500
+Processing by Cb::AxientosController#new as HTML
+  Rendered application/_axiento_det_fields.html.erb (0.6ms)
+  Rendered cb/axientos/_form.html.erb (3.7ms)
+  Rendered cb/axientos/new.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (couldn't find file 'autocomplete'
+  (in /home/friedheim/projects/test_uninitialized_constant_proyecto/app/assets/javascripts/application.js:9)):
+    3: <head>
+    4:   <title>TestUninitializedConstantProyecto</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__4493890759696242120_30224040'
+
+
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.6ms)
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 09:39:19 -0500
+Processing by Cb::AxientosController#new as HTML
+  Rendered application/_axiento_det_fields.html.erb (0.5ms)
+  Rendered cb/axientos/_form.html.erb (3.5ms)
+  Rendered cb/axientos/new.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 58ms
+
+ActionView::Template::Error (couldn't find file 'autocomplete'
+  (in /home/friedheim/projects/test_uninitialized_constant_proyecto/app/assets/javascripts/application.js:9)):
+    3: <head>
+    4:   <title>TestUninitializedConstantProyecto</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__4493890759696242120_30224040'
+
+
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.7ms)
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 09:39:33 -0500
+Processing by Cb::AxientosController#new as HTML
+  Rendered application/_axiento_det_fields.html.erb (0.7ms)
+  Rendered cb/axientos/_form.html.erb (4.2ms)
+  Rendered cb/axientos/new.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (couldn't find file 'best_in_place.purr'
+  (in /home/friedheim/projects/test_uninitialized_constant_proyecto/app/assets/javascripts/application.js:10)):
+    3: <head>
+    4:   <title>TestUninitializedConstantProyecto</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__4493890759696242120_30224040'
+
+
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.7ms)
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 09:39:39 -0500
+Processing by Cb::AxientosController#new as HTML
+  Rendered application/_axiento_det_fields.html.erb (0.5ms)
+  Rendered cb/axientos/_form.html.erb (3.5ms)
+  Rendered cb/axientos/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 69ms (Views: 67.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cb/axiento_dets.css?body=1" for 127.0.0.1 at 2014-03-27 09:39:39 -0500
+
+
+Started GET "/assets/cb/axientos.css?body=1" for 127.0.0.1 at 2014-03-27 09:39:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-27 09:39:39 -0500
+
+
+Started GET "/assets/cb/proyectos.css?body=1" for 127.0.0.1 at 2014-03-27 09:39:39 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-27 09:39:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-27 09:39:39 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-27 09:39:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-27 09:39:39 -0500
+
+
+Started GET "/cb/axientos/new" for 127.0.0.1 at 2014-03-27 09:39:42 -0500
+Processing by Cb::AxientosController#new as JS
+  Rendered application/_axiento_det_fields.html.erb (1.0ms)
+  Rendered cb/axientos/_form.html.erb (9.4ms)
+  Rendered cb/axientos/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cb/axientos" for 127.0.0.1 at 2014-03-27 09:39:48 -0500
+Processing by Cb::AxientosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F5RNkx4ZIpTy6ZsYu8me8zBNRxkn0RAH2skrA74/ieg=", "cb_axiento"=>{"axiento_dets_attributes"=>{"1395931182166"=>{"importe"=>"412", "proyecto"=>"", "_destroy"=>"false"}}}, "commit"=>"Guardar Asiento"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant Proyecto):
+  app/controllers/cb/axientos_controller.rb:27:in `create'
+
+
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/friedheim/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.1.0.rc2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.3ms)

@@ -1,0 +1,35 @@
+<%= form_for(@axiento) do |f| %>
+    <% if @axiento.errors.any? %>
+        <div id="error_explanation">
+          <h2>corrige <%= pluralize(@axiento.errors.count, "notificación") %>:</h2>
+
+          <ul>
+            <% @axiento.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+
+    <div class="adaptador">
+      <table class="tbl-detalle-ingreso">
+        <tr>
+          <th><%= f.label :importe, "Importe"%></th>
+          <th><%= f.label :proyecto %></th>
+          <th></th>
+        </tr>
+        <%= f.fields_for :axiento_dets, @axiento.axiento_dets do |builder|%>
+            <%= render 'axiento_det_fields', :f => builder %>
+        <% end %>
+      </table>
+
+      <p><%= link_to_add_fields "Añadir detalle asiento", f, :axiento_dets%> </p>
+    </div>
+
+
+
+    <div class="actions">
+      <%= f.submit "Guardar Asiento"%>
+    </div>
+<% end %>

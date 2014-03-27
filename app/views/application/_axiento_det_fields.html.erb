@@ -1,0 +1,8 @@
+<tr class="fields">
+  <td>    <%= f.text_field :importe, :placeholder => "0.00", :size => "10", :class => 'importe'%>  </td>
+
+  <td><%= f.text_field :proyecto, :class => "proyecto", :size => 15 %></td>
+  <td><%= f.hidden_field :_destroy %>    <%= link_to 'X','', :remote => true, :class => "eliminar_linea" %></td>
+</tr>
+
+

@@ -1,0 +1,2 @@
+module Cb::AxientosHelper
+end

@@ -1,0 +1,27 @@
+<h1>Listing cb_axiento_dets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Proyecto</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cb_axiento_dets.each do |cb_axiento_det| %>
+      <tr>
+        <td><%= cb_axiento_det.name %></td>
+        <td><%= cb_axiento_det.proyecto_id %></td>
+        <td><%= link_to 'Show', cb_axiento_det %></td>
+        <td><%= link_to 'Edit', edit_cb_axiento_det_path(cb_axiento_det) %></td>
+        <td><%= link_to 'Destroy', cb_axiento_det, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Axiento det', new_cb_axiento_det_path %>
